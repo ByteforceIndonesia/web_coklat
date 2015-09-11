@@ -22,11 +22,36 @@ body
 
 #header
 {
-	height:15%;
+	height:10%;
 	width:100%;
 	position:relative;
 	background:#754525;
 	float:left;
+	z-index:1000;
+	
+	ul
+	{
+		list-style-type: none;
+    	margin: 0;
+    	padding: 2em;
+	}
+	
+	li
+	{
+		display:inline;
+		margin-right:1.5em;
+	}
+	
+	a
+	{
+		color:#fff;
+		text-decoration:none;
+	}
+}
+
+#navbar
+{
+	z-index:1000;
 }
 
 #slides
@@ -35,38 +60,73 @@ body
 	position:relative;
 	width:100%;
 	float:left;
+	backrgound:#fff;
 }
 
 #welcome
 {
 	@include border-box ();
 	
-	height:25%;
+	height:35%;
 	position:relative;
 	width:100%;
 	float:left;
 	background:#754525;
+	padding-top:2em;
 	
 	p
 	{
 		color:#fff;
-		padding:2em;
+		padding-top:2em;
 		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	h1
+	{
+		color:#fff;
 	}
 }
 
 #aboutUs
 {
-	height:25%;
+	@include border-box ();
+	
+	height:65%;
 	position:relative;
 	width:100%;
 	float:left;
+	margin-bottom:1em;
+	
+	p
+	{
+		padding-top:2em;
+		margin-top:2em;
+		margin-bottom:2em;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }
 
 #ourTeam
 {
-	height:25%;
+	@include border-box ();
+	
+	height:30%;
 	position:relative;
 	width:100%;
 	float:left;
+	background:#21120A;
+	
+	h1
+	{
+		color:#fff;
+	}
+}
+
+#teamPerson
+{
+	background:#9B8979;
+	width:100%;
+	height:70%;
+	position:relative;
+	border-radius:50%;
 }

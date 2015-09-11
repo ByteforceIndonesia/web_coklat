@@ -5,21 +5,68 @@
 --------- Jonathan & Byran --------
 ---------- line : zonecapt --------
 ---------------------------------*/
+/* Mixins */
 
+@mixin border-box () {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;	
+}
+
+/* Start CSS */
 body
 {
 	margin:0;
 	padding:0;
 }
 
-header
+#header
 {
 	height:15%;
-	position:absolute;
+	width:100%;
+	position:relative;
+	background:#754525;
+	float:left;
+}
+
+#slides
+{
+	height:50%;
+	position:relative;
+	width:100%;
+	float:left;
+}
+
+#welcome
+{
+	@include border-box ();
 	
-	img
+	height:25%;
+	position:relative;
+	width:100%;
+	float:left;
+	background:#754525;
+	
+	p
 	{
-		position:absolute;
-		left:10%;
+		color:#fff;
+		padding:2em;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
+}
+
+#aboutUs
+{
+	height:25%;
+	position:relative;
+	width:100%;
+	float:left;
+}
+
+#ourTeam
+{
+	height:25%;
+	position:relative;
+	width:100%;
+	float:left;
 }

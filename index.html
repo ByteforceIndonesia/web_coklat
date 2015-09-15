@@ -1,7 +1,11 @@
 <!doctype html>
 <html>
 <head>
+
+<!-- Metas -->
+<meta name="viewport" content="width=device-width">
 <meta charset="utf-8">
+
 <!-- Title -->
 <title>Chocolate Pattisserie</title>
 
@@ -9,11 +13,39 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/skeleton.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/slide.css">
 
 <!-- JS Links -->
-<script src='js/jquery-1.10.2.min.js' type='text/javascript'></script>
-<script src='js/scrollIt.min.js' type='text/javascript'></script>
-<script>$(function() { $.scrollIt(); });</script>
+<script src="js/jquery-1.10.2.min.js" type='text/javascript'></script>
+<script src="js/scrollIt.min.js" type='text/javascript'></script>
+<script src="js/jquery.slides.min.js" type="text/javascript"></script>
+<script>
+
+$(function() { $.scrollIt(); 
+$('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: {
+          effect: "fade",
+		  active: false
+        },
+        pagination: {
+          effect: "fade",
+		  active: false
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        },
+		play: {
+          auto: true,
+		  effect:"fade"
+        },
+      });
+});
+
+</script>
 </head>
 
 
@@ -34,11 +66,16 @@
         </div>
         </div>
     </section>
-    <section id="slides">
-    	<div class="container">
-    		<div class="row">
-            <img src="img/slides/1.jpg"  style="width:100%; padding-top:-3em; margin-top:-3em; margin-bottom:-3em; z-index:-100;" border="0" alt="Null">
-            </div>
+    <section id="slide">
+    	<div class="container_slide">
+         <div id="slides">
+          <img src="img/slides/1.jpg" >
+          <img src="img/slides/2.jpg" >
+          <img src="img/slides/3.jpg" >
+          <img src="img/slides/4.jpg" >
+          <img src="img/slides/5.jpg" >
+          <img src="img/slides/6.jpg" >
+        </div>
 		</div>      
     </section>
    	<section id="welcome">

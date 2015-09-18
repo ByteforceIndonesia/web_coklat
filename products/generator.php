@@ -115,7 +115,7 @@ jQuery(document).ready(function() {
             <div class="six columns" style="padding:1; margin:0.5em;">
             	<h1>$nama</h1>
                 <p>Price IDR $price,-</p>
-                <form action="#">
+                <form action="../ordersum.html">
                 <p>Quantity</p>
                 <select>
                 	<option>1</option>

@@ -50,23 +50,25 @@ $('#slides').slidesjs({
 
 
 <body>
-	<section id="header">
+<div id="world">
+<div id="world2">
+	<section id="header" data-scroll-index="0">
     	<div class="container">
         <div class="row">
-        <div class="twelve columns">
+        <div class="five columns">
+    			<img src="img/logo.png"  style="width:100%;" border="0" alt="Null">
+            </div>
+        <div class="five columns">
         	<ul id="navbar">
             	<li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </div>
-        	<div class="five columns">
-    			<img src="img/logo.png"  style="width:100%;" border="0" alt="Null">
-            </div>
         </div>
         </div>
 	</section>
-    <section id="slide">
+    <section id="slide" data-scroll-index="1">
     	<div class="container_slide">
          <div id="slides">
           <img src="img/slides/1.jpg" >
@@ -78,7 +80,7 @@ $('#slides').slidesjs({
         </div>
 		</div>      
     </section>
-   	<section id="welcome">
+   	<section id="welcome" data-scroll-index="2">
     	<div class="container">
     			<div class="row">    
     				<div class="six columns">
@@ -91,7 +93,7 @@ $('#slides').slidesjs({
     			</div>
     	</div>
     </section>
-    <section id="aboutUs">
+    <section id="aboutUs" data-scroll-index="3">
     	<div class="container">
         	<div class="row">
     			<div class="twelve columns">
@@ -114,7 +116,7 @@ $('#slides').slidesjs({
     		</div>
     	</div>
     </section>
-    <section id="ourTeam">
+    <section id="ourTeam" data-scroll-index="4">
     	<div class="container">
     		<div class="row">
             	<div class="tweleve row">
@@ -145,5 +147,7 @@ $('#slides').slidesjs({
             </div>
     	</div>
     </section>
+</div>
+</div>
 </body>
 </html>

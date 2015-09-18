@@ -9,11 +9,23 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/nailthumb.css">
+<style type="text/css" media="screen">
+        .square-thumb {
+            width: 350px;
+            height: 350px;
+        }
+		
+		#ourTeam {
+			position:absolute;
+			bottom:0;
+		}
+</style>
 
 <!-- JS Links -->
 <script src='../js/jquery-1.10.2.min.js' type='text/javascript'></script>
 <script src='../js/scrollIt.min.js' type='text/javascript'></script>
-<script src="../js/jquery.nailthumb.1.1.min.css" type="text/javascript"></script>
+<script src="../js/jquery.nailthumb.1.1.min.js" type="text/javascript"></script>
 <script>
 
 $(function() { $.scrollIt(); });
@@ -28,20 +40,20 @@ jQuery(document).ready(function() {
 <body>
 <section id="header">
     	<div class="container">
-        <div class="twelve columns">
+        <div class="row">
+        <div class="five columns">
+    			<img src="../img/logo.png"  style="width:100%;" border="0" alt="Null">
+            </div>
+        <div class="five columns">
         	<ul id="navbar">
             	<li><a href="../index.html">Home</a></li>
                 <li><a href="../products.html">Products</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="../contactus.html">Contact Us</a></li>
             </ul>
         </div>
-        <div class="row">
-        	<div class="five columns">
-    			<img src="../img/logo.png"  style="width:100%;" border="0" alt="Null">
-            </div>
         </div>
         </div>
-</section>
+	</section>
 <section class="product">
 	<div class="container">
 		<div class="row">
@@ -49,14 +61,14 @@ jQuery(document).ready(function() {
             	<h1>Chocolate or Other Flavour</h1>
             </div>
 			<div class="six columns" style="padding:1; margin:0.5em;">
-            	<div class="square">
+            	<div class="nailthumb-container square-thumb">
                 <img src="../img/products/Chocolate/Cherry Chocolate Cupcakes.jpg" alt="null">
                 </div>
             </div>
             <div class="six columns" style="padding:1; margin:0.5em;">
             	<h1>Cake Name</h1>
                 <p>Price IDR 999.999,-</p>
-                <form>
+                <form action="#">
                 <p>Quantity</p>
                 <select>
                 	<option>1</option>
@@ -67,7 +79,7 @@ jQuery(document).ready(function() {
                 
                 <br><br><br>
                
-                <input type="submit" value="Add to Basket">
+                <a href="#"><input type="submit" value="Add to Basket"></a>
                 
                 </form>
             </div>

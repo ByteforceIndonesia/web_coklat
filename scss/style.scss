@@ -20,6 +20,17 @@ body
 	padding:0;
 }
 
+#world
+{
+	overflow:hidden;
+}
+
+#world2
+{
+	overflow:auto;
+	position:absolute;
+}
+
 #header
 {
 	height:10%;
@@ -53,15 +64,18 @@ body
 #navbar
 {
 	z-index:1000;
+	top:0.7em;
+	position:absolute;
 }
 
-#slides
+#slide
 {
-	height:50%;
+	height:600px;
 	position:relative;
 	width:100%;
 	float:left;
 	backrgound:#fff;
+	z-index:-1000;
 }
 
 #welcome
@@ -74,6 +88,7 @@ body
 	float:left;
 	background:#754525;
 	padding-top:2em;
+	z-index:1000;
 	
 	p
 	{
@@ -86,6 +101,7 @@ body
 	{
 		color:#fff;
 	}
+	
 }
 
 #aboutUs
@@ -97,6 +113,8 @@ body
 	width:100%;
 	float:left;
 	margin-bottom:1em;
+	z-index:1000;
+	background:#fff;
 	
 	p
 	{
@@ -112,6 +130,7 @@ body
 	@include border-box ();
 	
 	height:30%;
+	bottom:0;
 	position:relative;
 	width:100%;
 	float:left;
@@ -141,7 +160,9 @@ body
 	float:left;
 	position:relative;
 	width:100%;
-	height:25%;
+	height:650px;
+	background:url(../img/menu.jpg);
+	background-size:100% 100%;
 }
 
 #foodMenu
@@ -166,9 +187,10 @@ body
 
 #contactus
 {
+	float:left;
 	position:relative;
 	width:100%;
-	height:70%;
+	height:550px;
 	background:url(../img/contact-us.jpg);
 	background-size:100% 100%;
 }
@@ -178,12 +200,13 @@ body
 	float:left;
 	position:relative;
 	width:100%;
-	height:60%;
+	top:50%;
 	
 	h1
 	{
 		text-align:center;
 		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size:9em;
+		top:50%;
 	}
 }

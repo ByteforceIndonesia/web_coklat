@@ -210,3 +210,18 @@ body
 		top:50%;
 	}
 }
+
+.circle
+{
+	@include border-box ();
+	
+	background:#9B8979;
+	width:150px;
+	height:150px;
+	position:relative;
+	border-radius:50%;
+	overflow:hidden;
+	margin-bottom:1em;
+	left:50%;
+	margin-left:-100px;
+}

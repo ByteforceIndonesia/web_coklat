@@ -160,4 +160,20 @@ body {
     font-size: 9em;
     top: 50%; }
 
+.circle {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  background: #9B8979;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1em;
+  left: 50%;
+  margin-left: -100px; }
+
 /*# sourceMappingURL=style.css.map */

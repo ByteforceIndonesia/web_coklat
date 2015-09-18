@@ -1,49 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>HTML Generator</title>
-</head>
-<body>
-	<form method="post">
-    
-    <p>Nama file</p>
-    	<input type="text" name="namaFile" id="namaFile">
-      <br><br>
-    <p>Nama Barang</p>
-    	<input type="text" name="nama" id="nama">
-      <br><br>
-      
-     <p>Harga</p>
-        <input type="text" name="harga" id="harga">
-      <br><br>
-      
-    <p>flavour</p>
-        <input type="text" name="flavour" id="flavour">
-      <br><br>
-      
-      <p>img</p>
-        <input type="text" name="img" id="img">
-      <br><br>
-      
-      
-      <input type="submit">
-      </form>
-    </form>
-    
-    
-    <?php
-	
-		$namaFile=$_POST['namaFile'];
-		$nama=$_POST['nama'];
-		$price=$_POST['harga'];
-		$flav=$_POST['flavour'];
-		$img=$_POST['img'];
-
-		$template = fopen("$namaFile.html","w");
-		
-		$html = 
-<<<HTML_ISI
 		
 		<!doctype html>
 <html>
@@ -105,16 +59,16 @@ jQuery(document).ready(function() {
 	<div class="container">
 		<div class="row">
 			<div class="twelve columns">
-            	<h1>$flav</h1>
+            	<h1>Chocolate</h1>
             </div>
 			<div class="six columns" style="padding:1; margin:0.5em;">
             	<div class="nailthumb-container square-thumb">
-                <img src="../img/products/$img" alt="null">
+                <img src="../img/products/Chocolate/1.jpg" alt="null">
                 </div>
             </div>
             <div class="six columns" style="padding:1; margin:0.5em;">
-            	<h1>$nama</h1>
-                <p>Price IDR $price,-</p>
+            	<h1>Cherry Chocolate Cupcake</h1>
+                <p>Price IDR 320.000,-</p>
                 <form action="#">
                 <p>Quantity</p>
                 <select>
@@ -166,12 +120,3 @@ jQuery(document).ready(function() {
     </section>
 </body>
 </html>		
-HTML_ISI;
-		
-		fwrite($template, $html);
-        
-        fclose($template);
-		
-	?>
-</body>
-</html>
